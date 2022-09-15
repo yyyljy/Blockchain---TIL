@@ -66,4 +66,37 @@
 - 해쉬
   - 16진수 64자리 값이 추출됨
   - 입력값, 출력값 간에 유추 불가능함
-  - 블록해더 인풋 -> 블록 해쉬 아웃풋
+  - 인풋 : 블록 해더
+  - 아웃풋 : 블록 해쉬
+
+
+
+- 머클해쉬(Merkle Hash) : 거래 정보를 가지고 만든 해쉬
+
+
+
+- 블록의 용량 존재 - 한 블록에 포함된 거래의 숫자가 한계가 있음
+- TPS - 시간당 생성되는 블록의 갯수
+
+- 블록의 용량 증가 -> 단위 시간당 생성되는 거래 수가 줄어듦 -> 더 좋은 성능의 채굴자가 채굴에 유리해짐 << 내용 확인 필요
+
+
+
+- 지갑
+  - Address
+  - Public Key -  돈을 받을 때 사용되는 키
+  - Private Key - 전송 거래 발생 시 사용되는 키
+  - Private Key -> Public Key -> Address 단방향성 정보 확인 가능
+  - Elliptic Curve Multiplication ( Private -> Public )
+  - Hashing Function( Public -> Address )
+- 채굴
+  - difficulty : 일정 시간에 블록이 생성되도록 연산 속도를 조절
+  - 채굴 조건 : Hash of block < target
+  - target 값이 낮아질 수 록 난이도 증가
+  - nonce 값을 바꿔가면서 Hash of block < target을 만족하는 nonce 값을 찾는것
+- Mempool
+  - 블록에 올라가지 않은 거래 요청 목록
+  - Mempool에서 어떤 거래목록을 가져와서 블록을 만들지 결정은 채굴자가 함
+- 마지막 블록번호, 블록 해쉬값 비교 : 같으면 정상 but 대기 , 다르면 긴 원장의 것을 받아옴
+- 새로운 블록을 동기화 받을 때, 이전 블록이 다르면 긴 블록의 이전 블록을 받아옴(같아질 때까지)
+
