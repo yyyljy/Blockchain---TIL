@@ -1,6 +1,6 @@
 # Blockchain---TIL
 
-DAY 1 - 2022.09.15
+### DAY 1 - 2022.09.15
 
 [강의 내용 정리 파일](./Part 1/Day 1.md)
 
