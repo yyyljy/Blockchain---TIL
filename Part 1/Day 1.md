@@ -13,6 +13,7 @@
   1. 익명성(Anonymous)
 
      - 공개주소를 이용하지만 소유자 확인 불가능
+     - 하지만 지갑의 소유주가 한번 확인되면 평생 거래내역이 공개된다
 
   2. 추적가능성(Traceability)
 
@@ -21,6 +22,7 @@
   3. 무신뢰성(Trustless)
 
      - 제3자의 개입(은행 등의 기관과 같은 신뢰 보장 기관) 불필요
+     - 신뢰도 확인이 불필요
 
   4. 분산원장(Distributed Ledger)
 
@@ -28,7 +30,10 @@
 
   5. 탈중앙화(Decentralized)
 
-     - Single Point Failure 네트워크 전체를 담당하여 장애시 모두를 마비시키는 노드
+     - Single Point Entity
+
+     - Single Point Failure
+       - 한 노드가 네트워크 전체를 담당하여 해당 노드 장애 시 모두가 마비되는 것
 
   6. 합의 알고리즘(Consensus Algorithm)
 
@@ -51,6 +56,7 @@
        
 
 - 연산을 가장 많이 한 사람이 옳은 정보를 갖고 있다고 판단하는 이유
+  
   - 주식 투자와 같이 블록체인에 가장 많은 투자를 한 사람이 옳은 정보를 택했을 것이다.
 
 
@@ -86,9 +92,9 @@
 
 - 지갑
   - Address
-  - Public Key -  돈을 받을 때 사용되는 키
-  - Private Key - 전송 거래 발생 시 사용되는 키
-  - Private Key -> Public Key -> Address 단방향성 정보 확인 가능
+  - Public Key (공개키) -  돈을 받을 때 사용되는 키
+  - Private Key(개인키) - 전송 거래 발생 시 사용되는 키
+  - Private Key -> Public Key -> Address 단방향(복호화 불가능) 정보 확인 가능
   - Elliptic Curve Multiplication ( Private -> Public )
   - Hashing Function( Public -> Address )
   - 잔고를 따로 보관하고 있지 않음
@@ -119,3 +125,7 @@
 
 - Whitepaper(백서)
   - 기존의 해결 방식과의 차이점을 기술
+
+
+
+- 슬래싱 - PoS에서 불성실한 예치자의 예치금을 깎는 행위

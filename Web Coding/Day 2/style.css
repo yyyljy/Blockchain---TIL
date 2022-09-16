@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "EF_MACHO";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_MACHO.woff2")
+  font-family: "MYYeongnamnu";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "EF_MACHO";
+  font-family: "MYYeongnamnu";
 }
 
 h1 {
   background-color: blueviolet;
 }
 
-div {
-  background-color: lightblue;
+span {
+  font-size: 50px;
 }
 
 button {
@@ -26,8 +26,8 @@ button {
   padding: 10px 40px;
   margin-top: 50px;
   box-shadow: -4px -4px 0 -2px #fa780a, 4px 4px 0 -2px #fa780a;
-  font-size: 100px;
-  font-family: "EF_MACHO";
+  font-size: 50px;
+  font-family: "MYYeongnamnu";
 }
 
 button:hover {
@@ -37,4 +37,9 @@ button:hover {
 
 button:active {
   box-shadow: -4px -4px 0 0px #ff6108, 4px 4px 0 0px #ff6108;
+  transition: all 0.1s;
+}
+
+.div2 {
+  border: 10px solid lightblue;
 }
