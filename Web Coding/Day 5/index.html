@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>멋쟁이 사자처럼</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <span class="myName">What is your name?</span>
+      <button onclick="revealMyInfo('My name is h662.', '.myName', '#123456')">
+        Confirm
+      </button>
+      <button
+        onclick="revealMyInfo('내 이름은 h662 입니다.', '.myName', '#123456')"
+      >
+        확인
+      </button>
+    </div>
+    <div>
+      <span class="myJob">What is your job?</span>
+      <button
+        onclick="revealMyInfo('I am super ultra programmer.', '.myJob', '#654321')"
+      >
+        Confirm
+      </button>
+    </div>
+    <div>
+      <span class="myFavorite">What is your favorite?</span>
+      <button
+        onclick="revealMyInfo('I like zero coke.', '.myFavorite', 'pink')"
+      >
+        Confirm
+      </button>
+      <button
+        onclick="revealMyInfo('제로콜라를 좋아합니다.', '.myFavorite', 'pink')"
+      >
+        확인
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+<div>
+  <span class="myLanguage">My foreign language skill is ...</span>
+  <button onclick="revealMyInfo('En ★★★☆☆', '.myLanguage', '#000000')">
+    English
+  </button>
+  <button onclick="revealMyInfo('Cn ★☆☆☆☆', '.myLanguage', '#000000')">
+    Chinese
+  </button>
+  <button onclick="revealMyInfo('Jp ★★★★☆', '.myLanguage', '#000000')">
+    Japanese
+  </button>
+</div>

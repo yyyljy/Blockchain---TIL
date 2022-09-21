@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "MYYeongnamnu";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "MYYeongnamnu";
+}
+
+h1 {
+  background-color: blueviolet;
+}
+
+span {
+  font-size: 50px;
+}
+
+button {
+  /* background-color: white;
+    border: 0px solid white; */
+  background-color: blanchedalmond;
+  border: 10px solid lightblue;
+  padding: 10px 40px;
+  margin-top: 50px;
+  box-shadow: -4px -4px 0 -2px var(--mainColor), 4px 4px 0 -2px var(--mainColor);
+  font-size: 50px;
+  font-family: "MYYeongnamnu";
+}
+
+button:hover {
+  box-shadow: -4px -4px 0 2px var(--mainColor), 4px 4px 0 2px var(--mainColor);
+  transition: all 0.5s;
+}
+
+button:active {
+  box-shadow: -4px -4px 0 0px var(--mainColor), 4px 4px 0 0px var(--mainColor);
+  transition: all 0.1s;
+}
+
+.div2 {
+  border: 10px solid lightblue;
+}
+
+.myName {
+  text-decoration: underline solid var(--mainColor);
+}
+
+:root {
+  --mainColor: #ff6108;
+}
