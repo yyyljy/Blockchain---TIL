@@ -10,10 +10,41 @@
     <script src="main.js"></script>
   </head>
   <body class="bg-blue-100 md:mx-24">
-    <header class="bg-red-100 flex justify-between items-center shadow-sm py-4">
+    <header class="bg-red-100 flex justify-between items-center shadow-sm">
       <h1 class="text-3xl GmarketSansMedium">ABCDE Portfolio</h1>
 
       <div>날씨</div>
+      <div class="bg-green-100 text-center flex flex-col justify-center">
+        <img
+          class="weatherIcon"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+          alt="Weather Icon"
+        />
+        <span class="cityTemp">Seoul, 22℃</span>
+      </div>
     </header>
+    <main>
+      <div
+        class="bg-yellow-100 text-2xl font-bold px-4 py-12 md:text-6xl md:px-12 md:py-36 md:mx-24 md:my-36 hover:bg-yellow-200 cursor-pointer introduceMessage"
+        onclick="onClickIntroduce()"
+      >
+        안녕하세요, 프론트엔드 개발자 ABCDE입니다.
+      </div>
+      <div class="bg-orange-100">
+        <h2 class="text-center text-2xl text-bold">About Me</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center mt-8">
+          <img class="w-60 md:w-96" src="./owl.jpg" alt="Me" />
+          <ul class="md:ml-16 md:text-4xl">
+            <li class="mt-4">Code Name: ABCDE</li>
+            <li class="bg-blue-100 mt-4 w-full px-8">
+              ✅ HTML / CSS / JAVASCRIPT
+            </li>
+            <li class="bg-blue-100 mt-4 w-full px-8">✅ React</li>
+            <li class="bg-blue-100 mt-4 w-full px-8">✅ Solidity</li>
+            <li class="my-4">배우면서 즐겨라✏️</li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
