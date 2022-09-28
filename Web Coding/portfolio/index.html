@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
   </head>
-  <body class="bg-blue-100 md:mx-24">
-    <header class="bg-red-100 flex justify-between items-center shadow-sm">
+  <body class="bg-blue-100">
+    <header
+      class="bg-red-100 flex justify-between items-center shadow-sm md:mx-24"
+    >
       <h1 class="text-3xl GmarketSansMedium">ABCDE Portfolio</h1>
 
       <div>날씨</div>
@@ -23,9 +25,9 @@
         <span class="cityTemp">Seoul, 22℃</span>
       </div>
     </header>
-    <main>
+    <main class="md:mx-24">
       <div
-        class="bg-yellow-100 text-2xl font-bold px-4 py-12 md:text-6xl md:px-12 md:py-36 md:mx-24 md:my-36 hover:bg-yellow-200 cursor-pointer introduceMessage"
+        class="introduceMessage bg-yellow-100 text-2xl font-bold px-4 py-12 md:text-6xl md:px-12 md:py-36 md:mx-24 md:my-36 hover:bg-yellow-200 cursor-pointer"
         onclick="onClickIntroduce()"
       >
         안녕하세요, 프론트엔드 개발자 ABCDE입니다.
@@ -33,7 +35,7 @@
       <div class="bg-orange-100">
         <h2 class="text-center text-2xl text-bold">About Me</h2>
         <div class="flex flex-col md:flex-row justify-center items-center mt-8">
-          <img class="w-60 md:w-96" src="./owl.jpg" alt="Me" />
+          <img class="w-60 md:w-96" src="./W_big.png" alt="Me" />
           <ul class="md:ml-16 md:text-4xl">
             <li class="mt-4">Code Name: ABCDE</li>
             <li class="bg-blue-100 mt-4 w-full px-8">
@@ -45,6 +47,83 @@
           </ul>
         </div>
       </div>
+      <div
+        class="flex md:flex-col w-screen overflow-scroll md:overflow-hidden snap-x snap-mandatory text-center max-w-screen-lg mx-auto"
+      >
+        <div class="flex-shrink-0 w-screen snap-center md:my-16">
+          <img
+            class=""
+            src="https://d35ai18pny966l.cloudfront.net/course/kdt/w3/blockchain_1st/600w_home_thumbnail_blockchainschool.png"
+            alt="프로젝트1"
+          />
+          <div class="mt-4 text-xl font-bold md:text-4xl">
+            멋쟁이사자처럼 블록체인스쿨 1기
+          </div>
+          <button
+            class="bg-green-300 px-4 py-2 mt-2 rounded-xl md:text-2xl"
+            onclick="onClickOpenModal('project1')"
+          >
+            더 보기
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-screen snap-center md:my-16">
+          <img
+            src="https://news.samsungdisplay.com/wp-content/uploads/2022/03/IT_tc00480001633_final-1024x449.jpg"
+            alt="프로젝트2"
+          />
+          <div class="mt-4 text-xl font-bold md:text-4xl">
+            우리문화 살리기 프로젝트
+          </div>
+          <button
+            class="bg-green-300 px-4 py-2 mt-2 rounded-xl md:text-2xl"
+            onclick="onClickOpenModal('project2')"
+          >
+            더 보기
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-screen snap-center md:my-16">
+          <img
+            src="https://miro.medium.com/max/4000/0*QpK5ge3amTq1SKKr.jpg"
+            alt="프로젝트3"
+          />
+          <div class="mt-4 text-xl font-bold md:text-4xl">
+            우리문화 살리기 프로젝트
+          </div>
+          <button
+            class="bg-green-300 px-4 py-2 mt-2 rounded-xl md:text-2xl"
+            onclick="onClickOpenModal('project3')"
+          >
+            더 보기
+          </button>
+        </div>
+      </div>
     </main>
+    <div
+      class="modalDetail bg-black bg-opacity-40 w-screen min-h-screen fixed top-0 hidden justify-center items-center"
+    >
+      <div
+        class="bg-white py-8 w-3/4 md:w-1/2 text-center text-2xl md:text-4xl"
+      >
+        <h3 class="modalTitle">프로젝트 명</h3>
+        <ul class="modalContents"></ul>
+        <button
+          class="bg-red-300 px-8 py-4 rounded-full mt-8"
+          onclick="onClickCloseModal()"
+        >
+          닫기
+        </button>
+      </div>
+    </div>
   </body>
+  <div class="bg-gradient-to-t from-lime-900 to-yellow-400 text-gray-100">
+    <h3 class="font-bold text-center">Contact Me</h3>
+    <ul class="mt-4 ml-28">
+      <li>주소</li>
+      <li>핸드폰</li>
+      <li>이메일</li>
+    </ul>
+  </div>
+  <footer class="mx-24 text-center my-2">
+    designed by h662. 2022. All Rights Reserved.
+  </footer>
 </html>
